@@ -1,11 +1,15 @@
 <html>
 	<head>
 		<script>
-                  alert("Загадано число " + z);
+			z = "4567";
+			function play(form) {
+				alert("Загадано число " + z);
+				return false;
+			}
 		</script>
 	</head>
 	<body>
-		<form>
+		<form method="POST" action="" onsubmit="return play(this)">
 			<input name="game" value="">
 		</form>
 	</body>
