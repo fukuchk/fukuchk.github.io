@@ -26,7 +26,9 @@
 			function play(B){
 				n = btn.indexOf(B);
 				btn[n].value =letter[n];
-				btn[m].value =' ';
+				if(letter[n]!=letter[m]){
+					btn[m].value =' ';
+				}
 				console.log(n,m);
 				m=n;
 				
