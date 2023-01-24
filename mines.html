@@ -3,7 +3,7 @@
 		<style>
     			#puzzle {
 				display: inline-grid;
-				grid-template-columns: repeat(3, 1fr);
+				grid-template-columns: repeat(10, 1fr);
 				padding: 30vw;
 				padding-top: 10px;
 			}
@@ -16,7 +16,7 @@
 			}
     </style>
 		<script>
-			numberOfButtons = 9;
+			numberOfButtons = 100;
 			letter = Array.from("012345678");
 			letter.sort(()=>Math.random()-0.5)
 			btn = new Array(numberOfButtons);
