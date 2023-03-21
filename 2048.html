@@ -18,7 +18,7 @@
 		<script>
 			numberOfButtons = 16;
 			playground = new Array(numberOfButtons);
-			for(i=0i<numberOfButtons;i++){
+			for(i=0; i<numberOfButtons; i++){
 				playground[i]=0;
 			}
 			playground[0]=2;
@@ -36,7 +36,13 @@
 				else if(n==4 | n==8){     //left
 				}
 				else{return}
-			
+				numblank=new Area(0);
+			        for(i=0; i<numberOfButtons; i++){
+					if (playground[i]=0){
+						numblank=numblank/concat([i]);
+					}
+			}
+			console.log(numblank);
 			}
 		</script>
 	</head>
